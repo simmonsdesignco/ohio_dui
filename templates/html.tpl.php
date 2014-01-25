@@ -41,18 +41,12 @@
 <?php print $styles; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-<div id="skip-link">
-  <a href="#main-content" class="clear"><?php print t('Skip to content'); ?></a>
+<div id="skip-link"><a href="#main-content" class="clear"><?php print t('Skip to content'); ?></a>
 </div>
 <?php print $page_top; ?>
 <?php print $page; ?>
 <section id="scripts">
-	<?php print $scripts; ?>
-  <script>
-	jQuery(document).ready(function() {
-		jQuery('ul.sf-menu').superfish();
-	});
-  </script>
+<?php print $scripts; ?>
 </section>
 <?php print $page_bottom; ?>
 </body>

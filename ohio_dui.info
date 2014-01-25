@@ -5,7 +5,11 @@ core = 7.x
 version = 7.x-1.x-alpha1
 base theme = coeus_core
 
-; CSS
+; CSS and SASS
+; global.styles.css contains all of Drupal core's styles in one stylesheet.
+; custom.styles.css is where your custom css styles should go.
+; SASS support is also available. Add your SASS stylesheets the same way you
+; would CSS stylesheets - ie, stylesheets[media property][] = sass/style.sass
 stylesheets[all][] = css/global.styles.css
 stylesheets[all][] = css/custom.styles.css
 
