@@ -110,10 +110,12 @@ if ($user->uid) {
       	<h1 id="page-title"><?php print $title; ?></h1>
       	<?php print render($title_suffix); ?>
     	</div>
+      <?php if (module_exists('search')): ?>
     	<div id="search-block-wrapper" class="grid_3 omega">
       	<?php $search_block = module_invoke('search', 'block_view', 'search');
       	print render($search_block); ?>
     	</div>
+      <?php endif; ?>
     </div>
   	<hr noshade id="page-title-hr" class="clearfix">
     <?php if ($breadcrumb): ?>

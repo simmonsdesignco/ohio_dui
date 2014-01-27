@@ -31,6 +31,9 @@
 #navbar ul li:hover {
   background-color: transparent;
 }
+#navbar ul li a {
+  padding: 0 0 0 20px;
+}
 
 /**
  * Superfish Elements
@@ -94,6 +97,13 @@ ul.no-list-style li {
   height: 300px;
   overflow: scroll;
 }
+#node-60 .agree-to-terms {
+  display: none;
+}
+#node-60 #terms-of-use {
+  height: auto;
+  overflow: auto;
+}
 
 /**
  * Footer Styles
@@ -141,6 +151,7 @@ footer ul li {
 }
 .footer-menu-heading {
   font-weight: 300;
+  clear: both;
 }
 .footer-menu-50,
 .footer-menu-100 {
