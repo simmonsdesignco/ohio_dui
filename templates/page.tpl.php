@@ -59,32 +59,46 @@
  */
 
 // Sets up some variables to be used later.
+global $user;
+$logged_in = FALSE;
+if ($user->uid) {
+  $logged_in = TRUE;
+}
 ?>
 <div id="page-container">
   <header id="top-nav" class="clearfix">
     <div id="top-nav-wrapper" class="container_12">
-      <div id="branding" class="grid_4 alpha">
-      <?php if ($logo): ?>
-        <figure id="logo-figure">
-          <?php print $site_logo; ?>
-        </figure>
-      <?php endif; ?>
-      <?php if (!$logo): ?>
-      <?php print $site_name; ?>
-      <?php endif; ?>
+      <div id="client-wrapper">
+        <?php if (!$logged_in): ?>
+        <div id="login">
+          <a href="user/login">LOGIN</a>
+        </div>
+        <?php endif; ?>
+        <?php if ($logged_in): ?>
+        <div id="client-menu">
+          <a href="user">MY ACCOUNT</a>
+        </div>
+        <?php endif; ?>
       </div>
-
-      <div id="navbar" class="grid_8 omega">
-        <nav id="main-nav" class="alpha">
-       	<?php if ($page['main_menu']): ?>
-        <?php print render($page['main_menu']); ?>
+      <div id="branding-wrapper">
+        <div id="branding">
+        <?php if ($logo): ?>
+          <figure id="logo-figure">
+            <?php print $site_logo; ?>
+          </figure>
         <?php endif; ?>
-        </nav>
-        <nav id="secondary-nav" class="omega">
-       	<?php if ($page['user_menu']): ?>
-        <?php print render($page['user_menu']); ?>
+        <?php if (!$logo): ?>
+        <?php print $site_name; ?>
         <?php endif; ?>
-        </nav>
+        </div>
+  
+        <div id="navbar">
+          <nav id="main-nav">
+          <?php if ($page['main_menu']): ?>
+          <?php print render($page['main_menu']); ?>
+          <?php endif; ?>
+          </nav>
+        </div>
       </div>
     </div>
   </header>

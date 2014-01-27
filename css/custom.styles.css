@@ -5,6 +5,34 @@
  */
 
 /**
+ * Header Styles
+ */
+#top-nav {
+  height: auto;
+  border-bottom: none;
+  background-color: #fff;
+}
+#branding-wrapper,
+#client-wrapper {
+  width: 100%;
+  clear: both;
+}
+#login,
+#client-menu {
+  float: right;
+  font-size: .9em;
+}
+#branding {
+  float: left;
+}
+#navbar {
+  float: right;
+}
+#navbar ul li:hover {
+  background-color: transparent;
+}
+
+/**
  * Superfish Elements
  *
  * I used the "Simple" style supplied by Superfish, but made some adjustments
@@ -25,10 +53,20 @@
   border: none;
 }
 .sf-menu.sf-style-simple li {
+  background: none;
+}
+.sf-menu.sf-style-simple li.sf-depth-2 {
   background: #f1f1f1;
+}
+.sf-menu.sf-style-simple li.sf-depth-2:hover {
+  background: #f3f3f3;
 }
 .sf-menu.sf-style-simple.sf-horizontal > li:first-child:hover > ul, .sf-menu.sf-style-simple.sf-horizontal > li:first-child.sfHover > ul {
   left: 0;
+}
+.sf-menu.sf-style-simple li:hover,
+.sf-menu.sf-style-simple li.sfHover {
+  background: none;
 }
 .sf-menu.sf-style-simple.sf-horizontal li:hover > ul, .sf-menu.sf-style-simple.sf-horizontal li.sfHover > ul {
   top: 46px;
