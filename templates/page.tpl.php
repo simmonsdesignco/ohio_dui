@@ -117,7 +117,6 @@ if ($user->uid) {
     	</div>
       <?php endif; ?>
     </div>
-  	<hr noshade id="page-title-hr" class="clearfix">
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb-wrapper" class="grid_12 clearfix">
         <?php print $breadcrumb; ?>
