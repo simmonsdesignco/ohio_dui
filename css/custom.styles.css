@@ -100,11 +100,12 @@ ul.no-list-style li {
  */
 footer {
   background-color: #3d3e42;
-  color: rgba(219, 220, 222, .9);
+  color: rgba(219, 220, 222, 0.9);
+  font-weight: 300;
 }
 footer a,
 footer a.active {
-  color: rgba(219, 220, 222, .9);
+  color: rgba(219, 220, 222, 0.9);
 }
 footer p {
   margin: 0;
@@ -116,6 +117,13 @@ footer ul li {
   padding: 1em 0;
   max-width: 960px;
   margin: 0 auto;
+}
+#footer-bottom {
+  width: 100%;
+  text-align: center;
+  clear: both;
+  font-size: .9em;
+  color: rgba(219, 220, 222, 0.5);
 }
 .footer-column {
   width: 25%;
@@ -131,6 +139,9 @@ footer ul li {
   text-align: center;
   margin-top: 1em;
 }
+.footer-menu-heading {
+  font-weight: 300;
+}
 .footer-menu-50,
 .footer-menu-100 {
   float: left;
@@ -144,4 +155,5 @@ footer ul li {
 .footer-note {
   clear: both;
   float: left;
+  color: rgba(219, 220, 222, 0.5);
 }

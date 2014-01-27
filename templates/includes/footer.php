@@ -61,11 +61,11 @@
       </div>
       <div class="footer-column">
         <div class="footer-inner-column">
-          <h3>CONTACT</h3>
+          <h3 class="footer-menu-heading">CONTACT</h3>
           <p>Office:</p>
           <p>6797 N. High Street</p>
           <p>Columbus, OH 43085</p>
-          <h3>614.888.7274</h3>
+          <h3 class="footer-menu-heading">614.888.7274</h3>
           <p>
             <span class="footer-note">Walk-in &amp; In-Person</span>
             <span class="footer-note">Service also available</span>
@@ -81,12 +81,15 @@
       </div>
       <div class="footer-column">
         <div class="footer-inner-column">
-          <h3>GET CONNECTED</h3>
+          <h3 class="footer-menu-heading">GET CONNECTED</h3>
           <a href="#facebook">Facebook</a>
           <a href="#twitter">Twitter</a>
           <a href="#google-plus">Google+</a>
         </div>
       </div>
+    </div>
+    <div id="footer-bottom">
+      <p>OhioDuiEval is a subsidiary of Directions Counceling Group<br>Copyright 2014, Directions Counceling Group<br>All Rights Reserved</p>
     </div>
   </div>
 </footer>
