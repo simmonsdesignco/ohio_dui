@@ -61,8 +61,9 @@
 .sf-menu.sf-style-simple li.sf-depth-2 {
   background: #f1f1f1;
 }
-.sf-menu.sf-style-simple li.sf-depth-2:hover {
-  background: #f3f3f3;
+.sf-menu.sf-style-simple li.sf-depth-2:hover,
+#navbar ul li.sf-depth-2:hover {
+  background: #f9f9f9;
 }
 .sf-menu.sf-style-simple.sf-horizontal > li:first-child:hover > ul, .sf-menu.sf-style-simple.sf-horizontal > li:first-child.sfHover > ul {
   left: 0;
