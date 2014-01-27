@@ -160,23 +160,5 @@
     <?php print $feed_icons; ?>
   </section>
   
-  <footer id="footer" class="clearfix">
-    <div id="footer-section" class="container_12">
-      <div class="content">
-        <ul class="grid_4 alpha">
-          <li>Powered by <a href="https://drupal.org"
-            target="_blank">Drupal</a>
-          </li>
-        </ul>
-        <ul class="grid_4">
-          <li></li>
-        </ul>
-        <ul class="grid_4 omega">
-          <li>Theme by <a href="http://www.buchanandesigngroup.com"
-            target="_blank">Buchanan Design Group</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <?php include('includes/footer.php'); ?>
 </div>
