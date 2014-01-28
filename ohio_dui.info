@@ -11,6 +11,7 @@ base theme = coeus_core
 ; SASS support is also available. Add your SASS stylesheets the same way you
 ; would CSS stylesheets - ie, stylesheets[media property][] = sass/style.sass
 stylesheets[all][] = css/global.styles.css
+stylesheets[all][] = css/admin.styles.css
 stylesheets[all][] = css/custom.styles.css
 
 ; JAVASCRIPT
