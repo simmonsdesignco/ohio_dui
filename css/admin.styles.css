@@ -3,10 +3,70 @@
  *
  * These styles are used on the administration backend pages.
  */
+
+/**
+ * Global Admin Styles
+ */
+body.adminimal-menu {
+  margin-top: 29px;
+}
+.page-admin #top-nav,
+.page-admin #search-block-wrapper,
+.page-admin #footer-section {
+  display: none;
+}
+.page-admin #footer {
+  height: 100px;
+  margin-top: 2em;
+  visibility: visible;
+}
+.page-admin #highlights {
+  border-bottom: 1px solid;
+}
+.page-admin .tabs.secondary {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+.page-admin input,
+.page-admin select,
+.page-admin textarea {
+  margin: 0.5em 1em 0.5em;
+  padding: 6px;
+}
+.page-admin table {
+  border: 1px solid #aaa;
+}
+.page-admin td, th {
+  padding: 0.6em 0;
+}
+.page-admin .field-formatter-summary-cell,
+.page-admin .region-hidden-message td {
+  padding-left: 12px;
+}
+.page-admin .region-hidden-message td {
+  padding-top: 12px;
+}
+.page-admin .field-formatter-settings-edit-wrapper {
+  padding-right: 12px;
+}
+.page-admin .region-hidden-title td,
+.page-admin #edit-modes {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.page-admin tr.even {
+  background-color: #fcfcfc;
+}
+.page-admin .draggable a.tabledrag-handle {
+  margin-left: 0;
+}
+
 /**
  * Field Widgets
  */
-.field-type-text-long.field-widget-text-textarea {
+.page-admin .field-type-text-long.field-widget-text-textarea {
   margin: 3em 0;
 }
 
@@ -37,4 +97,45 @@
 }
 .schedule_table .subcontent-right {
   float: right;
+}
+
+/**
+ * Rules Pages
+ */
+.rules-elements-table li {
+  margin-right: 1em;
+}
+.rules-elements-table .tabledrag-toggle-weight-wrapper {
+  position: relative;
+}
+
+/**
+ * Views Administration Pages
+ */
+.views-admin a:hover {
+  text-decoration: underline;
+}
+.views-admin #views-display-menu-tabs {
+  margin-left: 0;
+}
+.views-admin li.add ul.action-list {
+  background: #f1f1f1;
+  padding: 6px;
+}
+.views-admin li.add ul.action-list li {
+  float: left;
+  clear: both;
+  border: none;
+}
+.views-admin li.add ul.action-list li:hover {
+  background-color: transparent;
+}
+.views-admin li.add ul.action-list li input.form-submit {
+  border: none !important;
+}
+.views-admin .ctools-dropbutton-processed .ctools-content li,
+.views-admin .ctools-dropbutton-processed .ctools-content a,
+.views-admin .ctools-button-processed .ctools-content li,
+.views-admin .ctools-button-processed .ctools-content a {
+  margin-bottom: 0;
 }

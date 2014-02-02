@@ -5,6 +5,32 @@
  */
 
 /**
+ * Basic Elements
+ */
+
+/**
+ * Views Styles
+ */
+.views-table thead th,
+.views-table tbody td {
+  width: auto;
+  text-align: left;
+  padding-left: 12px;
+}
+.views-table th.active img {
+  display: inline;
+  float: right;
+  padding-right: 12px;
+}
+.views-table thead th a {
+  color: #ddd;
+}
+.views-field .assessment-img {
+  float: right;
+  padding: 12px;
+}
+
+/**
  * Header Styles
  */
 #top-nav {
@@ -21,6 +47,14 @@
 #client-menu {
   float: right;
   font-size: .9em;
+  text-transform: uppercase;
+}
+#client-menu ul {
+  margin: 0;
+}
+#client-menu li {
+  float: left;
+  margin: 0 0 0 1em;
 }
 #branding {
   float: left;
@@ -34,6 +68,55 @@
 #navbar ul li a {
   padding: 0 0 0 20px;
 }
+
+/**
+ * Page Content Styles
+ */
+#page-content {
+  margin-bottom: 1em;
+}
+.field.field-type-taxonomy-term-reference.field-label-above {
+  float: left;
+  padding-right: 12px;
+}
+#comments {
+  clear: both;
+  padding-top: 1em;
+}
+
+/**
+ * Assessment Node Styles
+ */
+#node-assessment .assessment-img {
+  padding: 12px;
+}
+#node-assessment .assessment-price {
+  float: right;
+}
+#node-assessment .assessment-section-one {
+}
+#node-assessment .assessment-section-two {
+}
+#node-assessment .assessment-section-three {
+}
+#node-assessment .assessment-section-four {
+}
+#node-assessment .service-description {
+}
+#node-assessment .fieldset-legend {
+  display: inline-flex !important;
+}
+#node-assessment .fieldset-list {
+  padding: 0;
+}
+#node-assessment .fieldset-title h3 {
+  margin: 0;
+}
+#node-assessment .fieldset-wrapper {
+  padding-left: 1em;
+  padding-top: 0.1px;
+}
+
 
 /**
  * Superfish Elements
@@ -89,6 +172,75 @@ ul.disc li {
 }
 ul.no-list-style li {
   list-style-type: none;
+}
+
+/**
+ * User Page Styles
+ */
+.page-user #content {
+  margin-top: 0;
+}
+.page-user .views-row,
+#views-live-preview .view-id-user_account .views-row {
+  border-bottom: none;
+  margin: 0 !important;
+}
+.page-user .views-field,
+#views-live-preview .view-id-user_account .view-field {
+  float: left;
+  clear: both;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.page-user .field-label-hidden,
+#views-live-preview .view-id-user_account .field-label-hidden {
+  float: left;
+  padding-top: 3px;
+}
+.page-user .editablefield-edit,
+#views-live-preview .view-id-user_account .editablefield-edit {
+  border: none !important;
+  background: transparent !important;
+  margin: 0 0 26px 4px !important;
+  padding: 0 !important;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  line-height: 100%;
+  color: rgba(6, 120, 190, 1);
+}
+.page-user .form-actions,
+#views-live-preview .view-id-user_account .form-actions {
+  margin: 0;
+}
+.page-user .form-required,
+#views-live-preview .view-id-user_account .form-required {
+  display: none;
+}
+#edit-field-phone-0-actions-submit,
+#views-live-preview .view-id-user_account #edit-field-phone-0-actions-submit {
+  display: block !important;
+}
+.page-user .field-content.views-field-editablefield {
+}
+.page-user .views-field-editablefield fieldset {
+  border: none;
+}
+.page-user .views-field-editablefield .form-item,
+.page-user .views-field-editablefield fieldset {
+  background: rgba(229, 242, 255, 1);
+  padding: 10px;
+}
+.page-user #addressfield-wrapper #edit-field-address-0-field-address-und-0 {
+  padding: 0;
+}
+.page-user #addressfield-wrapper .form-type-textfield,
+.page-user #addressfield-wrapper .form-type-select {
+  margin: 0;
+  padding: 10px 0 0 10px;
+}
+.page-user .views-field-field-date-of-birth .form-item {
+  padding: 0 !important;
+  margin: 0;
 }
 
 /**

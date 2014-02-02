@@ -59,10 +59,23 @@
  */
 
 // Sets up some variables to be used later.
-global $user;
+global $user, $base_url;
 $logged_in = FALSE;
+$developer = FALSE;
+$user_name = '';
+$account_link = '';
+$dev_url = 'http://dev.ohioduieval.com';
+$prod_url = 'http://ohioduieval.com';
+
 if ($user->uid) {
   $logged_in = TRUE;
+  $user_name = $user->name;
+  $account_link = '<a href="' . $base_url . '/user' . '">My Account</a>';
+}
+
+if ($user->uid == 5) {
+  $developer = TRUE;
+  $account_link = '<a href="' . $dev_url . '/user' . '">My Account</a>';
 }
 ?>
 <div id="page-container">
@@ -71,12 +84,22 @@ if ($user->uid) {
       <div id="client-wrapper">
         <?php if (!$logged_in): ?>
         <div id="login">
-          <a href="user/login">LOGIN</a>
+          <a href="http://ohioduieval.com/user/login">Login</a>
         </div>
         <?php endif; ?>
         <?php if ($logged_in): ?>
         <div id="client-menu">
-          <a href="user">MY ACCOUNT</a>
+          <ul>
+            <li><?php print $account_link; ?></li>
+            <?php if ($developer): ?>
+              <?php if ($base_url == $prod_url): ?>
+              <li><a href="<?php print $dev_url; ?>">Dev Site</a></li>
+              <?php elseif ($base_url == $dev_url): ?>
+              <li><a href="<?php print $prod_url; ?>">Main Site</a></li>
+              <?php endif; ?>
+            <?php endif; ?>
+            <li><a href="<?php print $base_url . '/user/logout'; ?>">Log Out</a></li>
+          </ul>
         </div>
         <?php endif; ?>
       </div>
@@ -107,7 +130,12 @@ if ($user->uid) {
   	<div id="page-title-search" class="grid_12 clearfix">
     	<div id="page-title-wrapper" class="grid_9 alpha">
       	<?php print render($title_prefix); ?>
+        <?php //if (arg(0) == 'usera'): ?>
+        <!-- <h1 id="page-title"><?php //print $user_name; ?></h1> -->
+        <?php //endif; ?>
+        <?php //if (arg(0) != 'user'): ?>
       	<h1 id="page-title"><?php print $title; ?></h1>
+        <?php ///endif; ?>
       	<?php print render($title_suffix); ?>
     	</div>
       <?php if (module_exists('search')): ?>

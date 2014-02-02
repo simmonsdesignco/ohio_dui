@@ -41,7 +41,7 @@
           ),
         ));?>
         <?php print theme('links', array(
-          'links' => menu_navigation_links('menu-agreements'),
+          'links' => menu_navigation_links('menu-agreements-level-2'),
           'attributes' => array(
             'class'=> array(
               'footer-menu-100',
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div id="footer-bottom">
-      <p>OhioDuiEval is a subsidiary of Directions Counceling Group<br>Copyright 2014, Directions Counceling Group<br>All Rights Reserved</p>
+      <p>OhioDuiEval is a subsidiary of <a href="http://www.directionscounseling.com/" target="_blank">Directions Counceling Group</a><br>Copyright 2014, Directions Counceling Group<br>All Rights Reserved</p>
     </div>
   </div>
 </footer>

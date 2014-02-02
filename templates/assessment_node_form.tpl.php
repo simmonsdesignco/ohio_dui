@@ -30,28 +30,28 @@ global $base_path, $base_url;
   <div class="form-item_custum"> <?php print drupal_render($form['field_assessment_status']); ?> </div>
   <div class="dotted_hr"></div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_service_one']); ?>
-    <label id="primary_service_amount_one" class="label_item"> <?php print '$' . $form['#node']->field_rush_order_amount_one['und'][0]['value']; ?> </label>
+    <label id="primary_service_amount_one" class="label_item"> <?php // print '$' . $form['#node']->field_rush_order_amount_one['und'][0]['value']; ?> </label>
   </div>
   <div class="form-item_custum" style='display:none;'> <?php print drupal_render($form['field_rush_order_amount_one']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_title_one']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_status_one']); ?> </div>
   <div class="dotted_hr"></div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_service_two']); ?>
-    <label id="primary_service_amount_two" class="label_item"> <?php print '$' . $form['#node']->field_rush_order_amount_two['und'][0]['value']; ?> </label>
+    <label id="primary_service_amount_two" class="label_item"> <?php // print '$' . $form['#node']->field_rush_order_amount_two['und'][0]['value']; ?> </label>
   </div>
   <div class="form-item_custum" style='display:none;'> <?php print drupal_render($form['field_rush_order_amount_two']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_title_two']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_status_two']); ?> </div>
   <div class="dotted_hr"></div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_service_three']); ?>
-    <label id="primary_service_amount_three" class="label_item"> <?php print '$' . $form['#node']->field_rush_order_amount_three['und'][0]['value']; ?> </label>
+    <label id="primary_service_amount_three" class="label_item"> <?php // print '$' . $form['#node']->field_rush_order_amount_three['und'][0]['value']; ?> </label>
   </div>
   <div class="form-item_custum" style='display:none;'> <?php print drupal_render($form['field_rush_order_amount_three']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_title_three']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_status_three']); ?> </div>
   <div class="dotted_hr"></div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_service_four']); ?>
-    <label id="primary_service_amount_four" class="label_item"> <?php print '$' . $form['#node']->field_rush_order_amount_four['und'][0]['value']; ?> </label>
+    <label id="primary_service_amount_four" class="label_item"> <?php // print '$' . $form['#node']->field_rush_order_amount_four['und'][0]['value']; ?> </label>
   </div>
   <div class="form-item_custum" style='display:none;'> <?php print drupal_render($form['field_rush_order_amount_four']); ?> </div>
   <div class="form-item_custum"> <?php print drupal_render($form['field_rush_order_title_four']); ?> </div>

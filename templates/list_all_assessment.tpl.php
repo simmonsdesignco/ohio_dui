@@ -45,7 +45,7 @@ $result = node_load_multiple($nid_array);
         <b>Status:</b> '.$rec->field_assessment_status['und'][0]['value']; ?>
       </td>
       <td>
-        <?php if($rec->field_rush_order_title_one['und'][0]['value'] <> '') { ?>
+        <?php if(isset($rec->field_rush_order_title_one['und'][0]['value'])) { ?>
         <div class="subcontent">
           <div class="subcontent-left" style="width: 60%;">
             <?php print $rec->field_rush_order_title_one['und'][0]['value']; ?>
@@ -58,7 +58,7 @@ $result = node_load_multiple($nid_array);
         </div>
         <br />
         <?php } ?>
-        <?php if($rec->field_rush_order_title_two['und'][0]['value'] <> '') { ?>
+        <?php if(isset($rec->field_rush_order_title_two['und'][0]['value'])) { ?>
         <div class="subcontent">
           <div class="subcontent-left" style="width: 60%;">
             <?php print $rec->field_rush_order_title_two['und'][0]['value']; ?> 
@@ -71,7 +71,7 @@ $result = node_load_multiple($nid_array);
         </div>
         <br />
         <?php } ?>
-        <?php if($rec->field_rush_order_title_three['und'][0]['value'] <> '') { ?>
+        <?php if(isset($rec->field_rush_order_title_three['und'][0]['value'])) { ?>
         <div class="subcontent">
           <div class="subcontent-left" style="width: 60%;">
             <?php print $rec->field_rush_order_title_three['und'][0]['value']; ?>
@@ -85,7 +85,7 @@ $result = node_load_multiple($nid_array);
         </div>
         <br />
         <?php } ?>
-        <?php if($rec->field_rush_order_title_four['und'][0]['value'] <> '') { ?>
+        <?php if(isset($rec->field_rush_order_title_four['und'][0]['value'])) { ?>
         <div class="subcontent">
           <div class="subcontent-left" style="width: 60%;">
             <?php print $rec->field_rush_order_title_four['und'][0]['value']; ?>
