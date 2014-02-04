@@ -270,7 +270,8 @@ footer a,
 footer a.active {
   color: rgba(219, 220, 222, 0.9);
 }
-footer a:hover, footer a.active:hover { color: #fff; }
+footer a:hover { color: #fff; }
+
 footer p {
   margin: 0;
 }
